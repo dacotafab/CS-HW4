@@ -1,11 +1,17 @@
+//Functions for Character class
+
+
 #include <string>
 #include "character.h"
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
-int main() {
+void Character::useAbility(Character &target) {
+    cout << name << " attacks " << target << "with " << abilityName;
+    target.takeDamage(attackPower);
+}  
 
-
-    return 0;
-}
+void takeDamage(int damageTaken); 
+void showStatus(); 
